@@ -10,7 +10,7 @@ public class CustomersPurchaseSortFind {
 
     private List<Purchase> list = new ArrayList<>();
 
-
+// load class objects from a file
     public void readFile(String adress){
 
         BufferedReader plik = null;
@@ -53,7 +53,7 @@ public class CustomersPurchaseSortFind {
 
     }
 
-
+//method for sorting by name - Nazwisko and costs - Koszty
 
     public void showSortedBy(String pole) {
         if(pole.equals("Nazwiska")) {
@@ -84,6 +84,7 @@ public class CustomersPurchaseSortFind {
 
     }
 
+//    method showing purchases for exact client by his id
 
     public void showPurchaseFor(String id) {
         System.out.println("Klient "+id);

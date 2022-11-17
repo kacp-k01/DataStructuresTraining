@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03868bfc-525e-4fec-b2d0-6a938ee5e103" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStructuresTraining.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exc1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exc1/XList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exc2/CustomersPurchaseSortFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exc2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exc2/Purchase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exc3/Anagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exc3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordsToFind.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exc1/XList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exc1/XList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exc2/CustomersPurchaseSortFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exc2/CustomersPurchaseSortFind.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +30,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Foxrabbit\Desktop\IT\Zadania\DataStructuresTraining" />

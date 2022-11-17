@@ -12,44 +12,44 @@ public class XList<T> extends ArrayList<T>{
 
     private Collection<T> kolekcja;
 
-    //zmienna pomocnicza
+    //support variables for methods
     private List<T> lista = new ArrayList<>();
     List<T> listTMP;
 
 
 
     public XList(T... lista) {
-//	opcja dla pustego konstruktora czyli lista size 0
+//	empty constructor - list with size 0
         if(lista.length==0) {
             kolekcja = new ArrayList<>();
         }
-//	opcja dla listy argumentów
+//	constructor for argument lists
         else {
             kolekcja = Arrays.asList(lista);
         }
     }
 
-    //opcja dla kolekcji jako argumentu
+    //constructor from collection
     public XList(Collection<T> kol) {
         kolekcja = new ArrayList<>();
         kolekcja.addAll(kol);
     }
 
 
-    //funkcja of z listy argumentów lub z pojedynczej tabeli - jeśli chcielibyśmy funckje z listy tabel, trzeba by było uwzględnić ten przypadek
+    //funcion from list of arguments or an array
     public static <T> XList<T> of(T... list) {
         XList<T> t1 = new XList(list);
         return t1;
 
     }
 
-    //funkcja of z kolekcj
+    //function from a collection
     public static <T> XList<T> of (Collection<T> kol) {
         XList<T> t1 = new XList(kol.toArray());
         return t1;
     }
 
-    // wypisz znaki
+    // xlist class from chars
     public static <T> XList<T> charsOf(T tekst) {
         Object [] charT = ((String)tekst).split("");
 
@@ -62,7 +62,7 @@ public class XList<T> extends ArrayList<T>{
         return t1;
     }
 
-    //wypisz słowa
+    //x list class from words
     public static <T> XList<T> tokensOf(T tekst) {
         Object [] charT = ((String)tekst).split(" ");
 
@@ -75,7 +75,7 @@ public class XList<T> extends ArrayList<T>{
         return t1;
     }
 
-    //wypisz znaki oddzielone konkretnym znakiem
+    //xlist class for chars divided with symbol
     public static <T> XList<T> tokensOf(T tekst, T sp) {
         Object [] charT = ((String)tekst).split((String)sp);
 
@@ -89,7 +89,7 @@ public class XList<T> extends ArrayList<T>{
     }
 
 
-    // z klasy XList
+    // union of 2 Xlist class objects
     public XList<T> union(XList<T> kol) {
         XList<T> unionList = new XList<>();
         unionList.kolekcja.addAll(this.kolekcja);
@@ -97,7 +97,7 @@ public class XList<T> extends ArrayList<T>{
         return unionList;
     }
 
-    // z dowolnej kolekcji
+    // union of XList and any collection
     public XList<T> union(Collection<T> kol) {
         XList<T> unionList = new XList<>();
         unionList.kolekcja.addAll(this.kolekcja);
@@ -105,7 +105,7 @@ public class XList<T> extends ArrayList<T>{
         return unionList;
     }
 
-    // z listy argumentów
+    // union of XList and argument list
     public XList<T> union(T... lista) {
         XList<T> unionList = new XList<>();
         unionList.kolekcja.addAll(this.kolekcja);
@@ -113,7 +113,7 @@ public class XList<T> extends ArrayList<T>{
         return unionList;
     }
 
-
+//difference of 2 Xlists
     public XList<T> diff(XList<T> kol){
 
         XList<T> diff = new XList<>();
@@ -125,7 +125,7 @@ public class XList<T> extends ArrayList<T>{
         return diff;
     }
 
-    //funkcja diff
+    //difference of Xlist and collection
     public XList<T> diff(Collection<T> kol){
 
         XList<T> diff = new XList<>();
@@ -137,7 +137,7 @@ public class XList<T> extends ArrayList<T>{
     }
 
 
-    //funkcja unique
+    //leave only unique values
     public XList<T> unique(){
 
         XList<T> unique = new XList<>();
@@ -146,7 +146,7 @@ public class XList<T> extends ArrayList<T>{
         return unique;
     }
 
-    // tutaj zakładam że wykonujemy to dla 3 kolekcji
+    // combine 3 collections in an List of all arguments combination
     public XList<XList<T>> combine() {
 
         List<List<T>> listaStart = new ArrayList(this.kolekcja);
@@ -186,7 +186,7 @@ public class XList<T> extends ArrayList<T>{
     }
 
 
-
+//method to perform operation on each index of an XList collection
 
     public void forEachWithIndex(BiConsumer<T, Integer> bi) {
 
