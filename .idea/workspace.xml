@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="03868bfc-525e-4fec-b2d0-6a938ee5e103" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructuresTraining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructuresTraining.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exc1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exc1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Exc1/XList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exc1/XList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Exc2/CustomersPurchaseSortFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exc2/CustomersPurchaseSortFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exc2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exc2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exc2/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exc2/Purchase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +29,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2HXc0dH6c0GdKtd4lbKHNwpinKy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -30,12 +52,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.33908045",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Foxrabbit\Desktop\IT\Zadania\DataStructuresTraining" />

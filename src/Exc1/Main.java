@@ -1,14 +1,11 @@
 package Exc1;
 
-
 import java.util.*;
-
-
 
 public class Main {
     public static void main(String[] args) {
         // test data
-        Integer[] ints = { 100, 200, 300 };
+        Integer[] ints = {100, 200, 300};
         Set<Integer> set = new HashSet<>(Arrays.asList(3, 4, 5));
 
         // various ways of creating XList class
@@ -36,13 +33,12 @@ public class Main {
         System.out.println(slist3);
 
         // union method - sum of elements and some options
-        List<Integer> m1 = list1.union(list2);
+        XList<Integer> m1 = list1.union(list2);
         System.out.println(m1);
         m1.add(11);
         System.out.println(m1);
-        XList<Integer> m2 = (XList<Integer>) m1;
-        XList<Integer> m3 = m2.union(ints).union(XList.of(4, 4));
-        System.out.println(m2);
+        XList<Integer> m3 = m1.union(ints).union(XList.of(4, 4));
+        System.out.println(m1);
         System.out.println(m3);
         m3 = m3.union(set);
         System.out.println(m3);
@@ -56,26 +52,27 @@ public class Main {
         System.out.println(uniq);
 
 
-
         // combination of collection
-        List<String> sa = Arrays.asList( "a", "b");
-        List<String> sb = Arrays.asList( "X", "Y", "Z" );
-        XList<String> sc = XList.charsOf( "12" );
-        XList toCombine = XList.of(sa, sb, sc);
+        List<String> sa = Arrays.asList("a", "b");
+        List<String> sb = Arrays.asList("X", "Y", "Z");
+        XList<String> sc = XList.charsOf("12");
+        XList<List<String>> toCombine = XList.of(sa, sb, sc);
         System.out.println(toCombine);
-        XList<XList<String>> cres = toCombine.combine();
+        XList<XList<List<String>>> cres = toCombine.combine();
         System.out.println(cres);
 
 
-
-
         // forEachWithIndex - method for operation on each position
-        XList<Integer> lmod = XList.of(1,2,8, 10, 11, 30, 3, 4);
-        lmod.forEachWithIndex( (e, i) -> lmod.set(i, e*2));
+        XList<Integer> lmod = XList.of(1, 2, 8, 10, 11, 30, 3, 4);
+        lmod.forEachWithIndex((e, i) -> lmod.set(i, e * 2));
         System.out.println(lmod);
-        lmod.forEachWithIndex( (e, i) -> { if (i % 2 == 0) lmod.remove(e); } );
+        lmod.forEachWithIndex((e, i) -> {
+            if (i % 2 == 0) lmod.remove(e);
+        });
         System.out.println(lmod);
-        lmod.forEachWithIndex( (e, i) -> { if (i % 2 == 0) lmod.remove(i); } );
+        lmod.forEachWithIndex((e, i) -> {
+            if (i % 2 == 0) lmod.remove(i);
+        });
         System.out.println(lmod);
 
     }
