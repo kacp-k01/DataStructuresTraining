@@ -5,19 +5,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
-
 
 public class Anagrams {
 
-
-    private List<String> list = new ArrayList<>();
-    private List<char[]> listTest;
-
+    private final List<String> list = new ArrayList<>();
 
     public Anagrams(String adress){
 
-        BufferedReader plik = null;
+        BufferedReader plik;
 
         try {
             plik = new BufferedReader (new FileReader(adress));
@@ -26,25 +23,18 @@ public class Anagrams {
             for(String tekst = plik.readLine(); tekst!=null;tekst = plik.readLine()) {
                 String[] temp = tekst.split(" ");
 
-                for(String t : temp) {
-                    list.add(t);
-                }
+                Collections.addAll(list, temp);
 
             }
-        } catch (NumberFormatException e1) {
-            e1.printStackTrace();
-        } catch (IOException e1) {
+        } catch (NumberFormatException | IOException e1) {
             e1.printStackTrace();
         }
-
-
     }
 
     public List<List<String>> getSortedByAnQty() {
-        List<String> temp = new ArrayList<>();
-        temp.addAll(this.list);
+        List<String> temp = new ArrayList<>(this.list);
 
-        List<List<String>> finalList = new ArrayList<List<String>>();
+        List<List<String>> finalList = new ArrayList<>();
 
         for(int i = 0; i<temp.size(); i++) {
             if(!temp.get(i).equals("taken")) {
@@ -76,24 +66,20 @@ public class Anagrams {
     public String getAnagramsFor(String tekst) {
 
 
-        List<String> temp = new ArrayList<>();
-        temp.addAll(this.list);
+        List<String> temp = new ArrayList<>(this.list);
         List<String> finalList = new ArrayList<>();
 
         char[] master = tekst.toCharArray();
         Arrays.sort(master);
 
-        for(int i = 0; i<temp.size(); i++) {
-            char[] tab2	= temp.get(i).toCharArray();
+        for (String s : temp) {
+            char[] tab2 = s.toCharArray();
             Arrays.sort(tab2);
 
-            if(Arrays.equals(master, tab2)&&!temp.get(i).equals(tekst)){
-                finalList.add(temp.get(i));
+            if (Arrays.equals(master, tab2) && !s.equals(tekst)) {
+                finalList.add(s);
             }
-
         }
-
-
 
         return tekst+": "+finalList;
     }
